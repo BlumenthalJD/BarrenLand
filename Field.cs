@@ -1,17 +1,20 @@
+using System.Collections.Generic;
+
 namespace BarrenLand
 {
-	public class Field
+	public class Farm
 	{
-		public Field()
+		public Farm()
 		{
-			for (int i = 0; i < coordinates.Rank; i++)
+			for (int i = 0; i < 400; i++)
 			{
-				for (int j = 0; j < coordinates.GetLength(i); j++)
+				coordinates.Add(new List<char>());
+				for (int j = 0; j < 400; j++)
 				{
-					coordinates[i, j] = 0;
+					coordinates[i].Add('-');
 				}
 			}
 		}
-		public int[,] coordinates = new int[399, 599];
+		public List<List<char>> coordinates = new List<List<char>>();
 	}
 }
