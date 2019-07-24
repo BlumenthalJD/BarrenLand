@@ -9,7 +9,7 @@ namespace BarrenLand
 			for (int i = 0; i < 400; i++)
 			{
 				coordinates.Add(new List<char>());
-				for (int j = 0; j < 400; j++)
+				for (int j = 0; j < 600; j++)
 				{
 					coordinates[i].Add('-');
 				}
