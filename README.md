@@ -23,4 +23,5 @@ Output: 22816 192608
 	2. Run the BarrenLand executable from the directory
 
 ## Implementation Details
-I chose to use an iterative depth-first search to find the each area. Initially I was using a recursive implementation, but that was causing an internal stack overflow due to the depth that this solution requires. 
+* I chose to use an iterative depth-first search to find the each area. Initially I was using a recursive implementation, but that was causing an internal stack overflow due to the depth that this solution requires.
+* In order to validate the input string, I'm using regex to ensure the correct number of input coords, as well as proper input formatting. 
